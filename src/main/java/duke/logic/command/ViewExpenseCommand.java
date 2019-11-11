@@ -87,6 +87,12 @@ public class ViewExpenseCommand extends Command {
                 commandParams.getParam(PARAM_PREVIOUS_NAME)));
         }
 
+        if (previous < 0) {
+            throw new DukeException(String.format(
+                    DukeException.MESSAGE_EXPENSE_VIEW_NUMBER_INVALID,
+                    commandParams.getParam(PARAM_PREVIOUS_NAME)));
+        }
+
         model.viewExpense(mainParam, previous);
 
         return new CommandResult(COMPLETE_MESSAGE, CommandResult.DisplayedPane.EXPENSE);

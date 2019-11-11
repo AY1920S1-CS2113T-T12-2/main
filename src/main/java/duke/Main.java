@@ -191,7 +191,7 @@ public class Main extends Application {
             logger.info("*********loading sample payment");
 
             paymentBuilder.setDescription("Matriculation Card Replacement Fee");
-            paymentBuilder.setAmount("30").setTag("school life").setDue("08/12/2019");
+            paymentBuilder.setAmount("30").setTag("school life").setDue("17/11/2019");
             paymentBuilder.setPriority("High").setReceiver("OSA");
             paymentList.add(paymentBuilder.build());
 
@@ -201,7 +201,7 @@ public class Main extends Application {
             paymentList.add(paymentBuilder.build());
 
             paymentBuilder.setDescription("Raffles Hall Room Preservation Fee");
-            paymentBuilder.setAmount("200").setTag("housing").setDue("05/12/2019");
+            paymentBuilder.setAmount("200").setTag("housing").setDue("17/11/2019");
             paymentBuilder.setPriority("High").setReceiver("Raffles Hall");
             paymentList.add(paymentBuilder.build());
 
@@ -211,7 +211,7 @@ public class Main extends Application {
             paymentList.add(paymentBuilder.build());
 
             paymentBuilder.setDescription("Pay Back Money to Alice");
-            paymentBuilder.setAmount("15").setTag("loan").setDue("17/11/2019");
+            paymentBuilder.setAmount("15").setTag("loan").setDue("25/11/2019");
             paymentBuilder.setPriority("Medium").setReceiver("Alice");
             paymentList.add(paymentBuilder.build());
 
@@ -221,8 +221,8 @@ public class Main extends Application {
             paymentList.add(paymentBuilder.build());
 
             paymentBuilder.setDescription("In Room Storage Fee");
-            paymentBuilder.setAmount("150").setTag("housing").setDue("19/11/2019");
-            paymentBuilder.setPriority("Medium").setReceiver("Alice");
+            paymentBuilder.setAmount("150").setTag("housing").setDue("16/11/2019");
+            paymentBuilder.setPriority("Medium").setReceiver("Raffles Hall");
             paymentList.add(paymentBuilder.build());
 
             paymentBuilder.setDescription("PhotoShop Camp Sign Up Fee");
